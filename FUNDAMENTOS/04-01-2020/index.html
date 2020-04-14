@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <main class="main">
+        <div class="slider"></div>
+        <div class="contForm">
+            <form>
+                <div class="contInputs">
+                   <label for="name">Nombre</label>
+                   <input type="text" id="name" required/>
+                </div>
+                <div class="contInputs">
+                    <label for="mail">Correo</label>
+                    <input type="email" id="mail" required/>
+                 </div>
+                <div class="contInputs">
+                    <label for="tel">Teléfono</label>
+                    <input type="tel" id="tel"  required
+                    placeholder="Ej. +57 312 445 0147" maxlength="13"/>
+                </div>
+                <div class="contInputs">
+                    <label for="ic">Documento de identidad</label>
+                    <input type="number" id="ic"  required/>
+                </div>
+                <div class="contInputs">
+                    <label for="date">Fecha de nacimiento</label>
+                    <input type="date" id="date"  required/>
+                </div>
+                <div class="contInputs">
+                    <label for="program">Selecciona un programa</label>
+                    <select id="program">
+                        <option value="value1">Programa 1</option>
+                        <option value="value2">Programa 2</option>
+                        <option value="value3">Programa 3</option>
+                    </select>  
+                </div>
+                <div class="contInputs inputGender">
+                    <label>Género</label>
+                    
+                    <label><input type="radio" name="gender" value="femenino">Femenino</label>
+                    
+                    <label><input type="radio" name="gender" value="masculino">Masculino</label>
+                </div>
+                <div class="contInputs">
+                    <label for="msg">Mensaje</label>
+                    <textarea name="msg" id="msg" cols="40" rows="5"></textarea>
+                </div>
+                <div class="contInputs contTyC">
+                    <label for="TyC">Acepto terminos y condiciones*</label>
+                    <input type="checkbox" id="TyC" required />
+                </div>
+                
+                <div class="contInputs contBtn">
+                    <button type="submit" >Enviar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+</body> 

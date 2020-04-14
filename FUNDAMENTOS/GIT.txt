@@ -1,0 +1,32 @@
+Git Bush
+
+GUIA: https://www.ionos.es/digitalguide/servidores/know-how/comandos-cmd/
+
+pwd     ---> Ruta dónde estamos
+dir     ---> Las carpetas que hay dónde estamos parados
+cd      ---> Change Directory (cambiar de carpeta)  "cd Documents"
+cd ../  ---> Volver atras
+clear   ---> Limpiar ventana
+
+
+git config --global user.email "esteguans22@gmail.com" ---> Loguearse
+git config --global user.name "Esteban2207"            ---> Loguearse
+
+
+git init          ---> Crear repositoria en forma local
+git add           ---> Subir al repositorio  (. para subir todo sino solo el nombre del archivo)
+git status        ---> Saber el estado del respositorio
+git commit -m ""  ---> Comentario referente a lo subido
+git remote add origin https://github.com/Esteban2207/classGitHub.git ---> Conectar con GitHub por primera vez
+git push -u origin master ---> Subir a la nube por primera vez
+git push 
+
+
+
+
+
+
+
+
+
+

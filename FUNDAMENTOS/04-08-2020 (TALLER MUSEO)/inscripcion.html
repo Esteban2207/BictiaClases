@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inscripcion</title>
+        <link rel="stylesheet" href="estilosinscripcion.css">
+        <link rel="icon" href="./pics/favicon.png" type="image/PNG">
+        <link rel="html" href="nosotros.html">
+        <link rel="html" href="eventos.html">
+        <link rel="html" href="inscripcion.html">
+        <link rel="html" href="index.html">
+    </head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <img src="./pics/logosofia.png" alt="logo" class="logo" />
+            <div class="hamburguer">
+                <label for="hamburguer" class="contHamburguerMenu">
+                    <img src="./pics/menu.png" alt="" class="picMenu" />
+                </label>
+                <input type="checkbox" id="hamburguer" class="hamburguerCheck" />
+                <ul class="contMenu">
+                    <li class="itemMenu">
+                        <a href="index.html" class="linkMen">Home</a>
+                    </li>
+                    <li class="itemMenu">
+                        <a href="nosotros.html" class="linkMen">Nosotros</a>
+                    </li>
+                    <li class="itemMenu">
+                        <a href="eventos.html" class="linkMen">Eventos</a>
+                    </li>
+                    <li class="itemMenu">
+                        <a href="inscripcion.html" class="linkMen">Inscripción</a>
+                    </li>
+                    <li class="itemMenu">
+                        <a href="#Contacto" class="linkMen">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="title">
+            <h3>BIT-Art INSCRIPCIÓN</h3>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="slider"></div>
+        <div class="contForm">
+            <form>
+                <div class="contInputs">
+                   <label for="name">Nombre</label>
+                   <input type="text" id="name" required/>
+                </div>
+                <div class="contInputs">
+                    <label for="lastname">Apellido</label>
+                    <input type="text" id="lastname" required/>
+                 </div>
+                <div class="contInputs">
+                    <label for="mail">Correo</label>
+                    <input type="email" id="mail" required/>
+                 </div>
+                <div class="contInputs">
+                    <label for="tel">Teléfono</label>
+                    <input type="tel" id="tel"  
+                    placeholder="Ej. +57 312 445 0147" maxlength="13" required/>
+                </div>
+                <div class="contInputs">
+                    <label for="program">Selecciona un programa</label>
+                    <select id="program">
+                        <option value="value1">Repensar Guernica</option>
+                        <option value="value2">Niño de Elche</option>
+                        <option value="value3">Petrit Halilaj</option>
+                    </select>  
+                </div>
+
+                <div class="contInputs contBtn">
+                    <button type="submit">Inscribirme</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+    <footer class="footer" id="Contacto">
+        <div class="colsFooter">
+            <img src="./pics/logosofia.png" alt="" class="logoFooter" />
+        </div>
+        <div class="colsFooter colsFooterContacto">
+            <h4 class="h4Footer">Contacto</h4>
+            <ul>
+                <li>
+                    <p class="infoFooter txtFooter">Teléfono</p>
+                    <a href="tel:91 774 10 00">91 774 10 00</a>
+                </li>
+                <li>
+                    <p class="infoFooter txtFooter">Página Web</p>
+                    <a href="https://web.archive.org/web/20090526101011/http://www.museoreinasofia.es/index.html"
+                    target="_blank">Museo Reina Sofía</a>
+                </li>
+            </ul>
+        </div>
+        <div class="colsFooter">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12152.169452474107!2d-3.6945569!3d40.4079123!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x309814d159babf71!2sMuseo%20Nacional%20Centro%20de%20Arte%20Reina%20Sof%C3%ADa!5e0!3m2!1ses!2sco!4v1586326358135!5m2!1ses!2sco"
+                width="300"
+                height="250"
+                frameborder="0"
+                style="border: 0;"
+                aria-hidden="false"
+                tabindex="0"
+            ></iframe>
+        </div>
+    </footer>
+    
+</body>
+</html>

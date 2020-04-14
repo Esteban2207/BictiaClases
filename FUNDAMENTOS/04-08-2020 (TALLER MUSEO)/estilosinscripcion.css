@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(252, 245, 236);
+}
+
+/* HEADER */
+
+.header{
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+	box-shadow: 0 2px 8px #333;
+	display: flex;
+    align-items: center;
+}
+
+.hamburguer {
+	width: 90%;
+}
+
+.picMenu {
+	width: 32px;
+	cursor: pointer;
+	background-image: url(./logo.png);
+}
+
+.contHamburguerMenu,
+.hamburguerCheck {
+	display: none;
+}
+
+.contMenu {
+	display: flex;
+	justify-content: flex-end;
+	padding: 10px 0;
+}
+
+.itemMenu {
+	list-style: none;
+	margin: 0 30px;
+	border-right: 1px solid #dbdbdb;
+}
+
+.linkMen {
+	text-decoration: none;
+	display: block;
+	padding: 15px 10px;
+	color: #333;
+}
+
+.logo {
+	width: 100px;
+}
+
+.prueba {
+	margin: 50px auto;
+	background-image: url(./logo.png);
+	width: 100px;
+	height: 100px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	transition: all 1s ease-in-out;
+}
+.prueba:hover::before {
+	content: 'Hola';
+	margin-top: 50px;
+	margin-right: 50px;
+}
+.prueba:hover {
+	background-image: url(./menu-white.png);
+}
+
+.title {
+   align-self: center;
+   margin-top: 30px;
+   font-size: 50px;
+
+}
+
+
+@media screen and (max-width: 768px) {
+	.contHamburguerMenu {
+		display: block;
+		padding: 10px 0;
+	}
+
+	.contMenu {
+		flex-direction: column;
+		box-shadow: 0 2px 4px gray;
+		transform: translateX(-110%);
+		transition: all 0.3s ease-in-out;
+	}
+
+	.hamburguerCheck:checked + .contMenu {
+		margin-left: 50px;
+		transform: translateX(0);
+	}
+
+	.itemMenu {
+		border-right: none;
+		border-bottom: 1px solid #dbdbdb;
+	}
+
+	.picMenu {
+		margin-left: 40px;
+	}
+
+	.nav {
+		box-shadow: none;
+		align-items: flex-start;
+	}
+
+	.logo {
+		order: 2;
+		margin-right: 40px;
+	}
+}
+
+
+/* MAIN */
+
+.contForm {
+    width: 60%;
+    margin:  50px auto 50px;
+}
+
+.contInputs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.contInputs input, 
+.contInputs select,
+.contInputs textarea {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(235, 235, 235);
+    font-size: 14px;
+}
+
+.contInputs input::placeholder {
+    color: rgb(175, 175, 175);
+}
+
+.contInputs input:focus, 
+.contInputs select:focus,
+.contInputs textarea:focus {
+    background-color: rgb(241, 241, 241);
+    box-shadow: 0 0 4px rgb(63, 63, 63);
+    transition: all .3s ease-in-out;
+}
+
+.contInputs textarea {
+    resize:none;
+}
+
+/* .contInputs input:hover, 
+.contInputs select:hover,
+.contInputs textarea:hover {
+    background-color: salmon;
+} */
+
+.contBtn {
+    justify-content: center;
+    align-items: center;
+}
+
+.contBtn button {
+    padding: 10px 20px;
+    background-color: brown;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    transition: all .3s ease-in-out;
+}
+
+.contBtn button:hover {
+    transform:scale(1.5);
+    transition: all .3s ease-in-out;
+}
+
+.contTyC {
+    flex-direction: row-reverse;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.contTyC input {
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: brown;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.colsFooter {
+    width: 31%;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+}
+
+.logoFooter {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.colsFooterContacto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.colsFooterContacto li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.colsFooterContacto h4 {
+    margin-bottom: 30px;
+}
+
+.colsFooterContacto a {
+    text-decoration: none;
+    color: rgb(233, 225, 214);
+}
+
+.colsFooterContacto a:hover{
+    color: rgb(235, 183, 116);
+}
+
+
+.h4Footer {
+    font-size: 40px;
+}
+
+.infoFooter {
+    padding-bottom: 10px;
+}
+
+.txtFooter {
+    font-weight: bold;
+}
+
+
+
+@media screen and (max-width:768px) {
+    iframe {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .colsFooter {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    iframe {
+        width: 100%;
+    }
+}

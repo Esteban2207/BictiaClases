@@ -1,0 +1,279 @@
+INDUCCIÓN
+
+Visual Studio Code
+    Instalar las siguientes extensiones:
+    -AutoRenameTag
+    -Beautify
+    -Brackets Pair Colorizer
+    -Vs Code icons
+    (Opcional -Prettier -ESlint)
+
+
+Crear Carpeta (BICTIA)
+Abrir Carpeta y New File (Index.html)
+
+FrontEnd = Lo que ve el cliente.
+BackEnd = Lo que no vemos.
+
+*HTML(Marco - Like bones)
+*Css (Nuestro físico)
+*JavaScript (Funcionalidad)
+
+-HTML
+ Se dividen en dos partes(Head y Body)
+ <!DOCTYPEhtml>
+ <html lang="es">                  lang---> Configurar idioma
+ <head></head> (Info indispensable para que el navegador interprete/lea)
+ <body></body> (Toda la info que el usuario verá)
+ </html>
+
+(<!--)(--!>) Agregar comentario
+
+Investigar etiquetas de body
+
+HTML5: A diferencia de otros tiene semantica, este lenguaje le da sentido a cada etiqueta (las etiquetas siempre van en minuscula)
+ 
+TITULO = <h> </h>
+h1 = Titulo Principal de la página (Uno solo)
+h2 =
+h3 =
+h4 = 
+h5 =
+h6 =
+ 
+PARRAFO = <p> </p>
+PARRAFO MAS PEQUEÑO = <small> </small>
+
+LINKEAR UNA PALABRA = <a href=""> </a>  (Dentro de las comillas va el link)
+
+(abrir página de etiqueta en otra ventana)
+<a href="" target="_blank"> </a>
+(No me lleve a algun lado = #)
+
+
+ABRIR IMAGEN = 
+
+<img 
+  width="200px" (Tamaño de la imagen)
+  src="./pics" (Carpeta externa/Ruta del archivo) 
+  alt=""       (Descripción)   
+/>
+
+-De internet=
+
+ver imagen y copiar link. Luego ingresar en src
+
+PONER UN LOGO=
+(head)Resolución x32
+ 
+<link rel="icon" href="" type="image/png">
+
+Se puede linkear un # de teléfono
+<a href="tel:361864"></a>
+se puede linkear un correo
+<a href="mailto:corre@correo.com"></a>
+
+(Puedes enlazar un wsp por medio de paginas que generan un link para tu número)
+
+LISTAS =
+Se suelen usar para hacer menus, hay dos tipos=
+
+<ul> (Aquí no enumera)
+  <li>Este es el primer item </li>
+</ul>
+
+
+<ol>(Aquí enumera)
+  <li>Este es el primer item </li>
+</ol>
+
+ESPACIO
+<br>
+
+CAJA = Encierra contenido específico
+<div>
+
+CLASES = Sirve para dar una propiedad especifica a un conjunto
+class=""
+
+Cammel Case itemMenu
+Snake Case item_Menu
+
+
+PSEUDOCLASES = 
+(Css)
+.clase:{}
+(hover-focus-active-visited)
+
+.clase::{} 
+(before-after)
+
+
+ID= Elementos únicos para un solo objeto
+En css se llaman con #
+
+
+
+MAQUETACIÓN DE HTML= (INVESTIGAR TIPOS DE CONTENEDORES)
+header= Como el encabezado  va el menú <header>              *Es recomendable meter el header dentro del main y 
+                                                              generar clases con el mismo nombre*
+main= contenido principal     <main> 
+footer= Info contacto-CopyR   <footer>
+aside= Caja lateral
+
+TABLAS=
+<table></table>
+Fila = Left to rigth
+<tr>
+Columna=
+<th> (Table Head) Esto es para cabecera
+<td> (Table Data) Esto es para contenido normal
+<td colspan="2"> (Esto ocupa la cantidad de casillas que queramos) (Izq a Der)
+<td rawspan="2"> (Arriba a abajo)
+
+
+
+(Para especificar en css citamos la clase de la tabla Ej: .table th)
+
+
+FORMULARIO = 
+<form> (Action: donde se va a enviar y method: como se enviará)
+<label for:"asd"> (Nombre, Apellido... Etc)(Se relaciona el label con el input por medio de un id)
+<input type   email  id:"asd"> (Rectangulo para ingresar Info)
+       type   text
+       type   tel
+
+<button type="sumbit"> (subir los archivos)  (Los botones se usan para realizar acciones)
+
+
+placeholder (lo que aparece en el recuadro del input)
+required (*Obligatorio)
+maxlength (cantidad de carácteres limitada)
+select (recibe etiqueta de opcion)(Ej sleccione tipo de documento)
+
+
+<div class="contInputs inputGender">
+                    <label>Género</label>
+                    
+                    <label><input type="radio" name="gender" value="femenino">Femenino</label>
+                    
+                    <label><input type="radio" name="gender" value="masculino">Masculino</label>
+                </div>
+
+
+
+
+
+
+
+-CSS = Hojas de cascada en estilo
+Para ser más especifico se usa class en las etiquetas de html <class="">
+
+* {
+    margin: 0;                    (Quitar las prpiedades predeterminadas de margen del google)
+    padding: 0;
+    box-sizing: border-box;       (EL padding empuja los objetos hacia dentro manteniendo un tamaño)
+}
+
+SELECCIONAR UN ELEMENTO DE HTML
+Citar la etiqueta directa = body{}
+Citar por medio de clase  = .main{}
+Citar el hijo directo     = .main>section>div:child (first, nth)
+
+ 
+background-color(fondo)
+background-image:url();
+background-repeat:no-repeat;
+background-size: contain;
+margin (espacio entre elementos externos)
+padding (espacio entre elementos internos)
+text-align:center; (Centrar textos)
+font-size: 50px; (Agrandar texto)
+color: ; (Cambiar color letra)
+font-family:; (Cambiar fuente)  GOOGLE FONTS (Nos da el link y solo es pegarlo en el head)
+font-weight :; (Que tan pesado es la letra)	
+display: block/inline ; (cambiar el tipo de propiedad)
+list-style: none; (Tipo de elemento que tiene la lista)
+float: right; (ul) float:left; (li)
+display: flex;        (INVESTIGAR FLEXBOX Y GRID)
+justify-content: center;
+:hover{} (cuando pase el mouse encima haga halgo distinto)
+     transform:scale(1.5); (agrandar)
+:focus{} (cuando selecciono algo pasa algo)
+text-decoration:none; (quitar subrayado)
+border: 1px solid color;
+border-radius: 20px;
+border-collapse:collapse;    (Unir los border de las tablas)
+box-shadow:1px 1px 8px color;  | box-shadow:inset 1px 1px 8px color;
+position:(sticky,fixed,static); (-webkit-sticky;)
+z-index:;(Profundidad del eje z)
+transform:scale();
+transition:all 3s ease in out;
+table-margin:auto; (centrar tabla)
+text-transform:uppercase;
+limitar textarea = resize, vertical, horizontal, none
+
+
+@media screen and (max-width:768px) (A partir de este tamaño empieza a cambiar)
+                     
+
+-UNIDADES DE MEDIDA=
+px Pixeles
+rem = 16 Pixeles
+em = El doble del padre
+% = porcentaje
+
+
+FLEXBOX=
+
+Maneja eje x y y
+
+display:flex;  (propiedad para flexbox) Esta por defecto aplica al eje x 
+               (afecta solo a los hijos del div)(efecto padre al hijo)
+
+flex-direction: row; ()
+flex-direction: column; (los ejes se invierten x=y y=x)
+
+flex-direction: column-reverse;
+flex-direction: reverse;
+
+ROW:
+justify-content:center; (horizontal)
+align-items: center; (verticalmente)
+
+COLUMN:
+justify-content:center; (verticalmente)
+align-items: center; (horizontal) (como si todo fuera un elemento)
+
+justify-content: space between; (Calcula espacio entre objetos y los separa simétricamente)
+justify-content: space around; (Igual que el between pero deja una margen también)
+justify-content: space evenly; (Los centra parejo) 
+
+justify-content: flex-end; (organizarlos al final)
+justify-content: flex-start; (organizarlos al principio)
+align-items: flex-end;
+align-items: flex-start;
+
+flex-wrap: wrap; (respete la medida de los hijos)
+align-items: ;(como si todo fuera un elemento)
+align-content: ;(mas de una línea de items)
+
+/* PROPIEDADES DE ELEMENTO PADRE
+FLEX-DIRECTION:;
+JUSTIFY-CONTENT:;
+ALIGN-ITEMS:;
+FLEX-WRAP:;
+ALIGN-CONTENT:;
+*/
+
+
+/* PROPIEDADES DE ELEMENTO HIJO
+order:#Número; (Poner order específico a los elementos)
+
+align-self:;
+
+
+
+
+
+

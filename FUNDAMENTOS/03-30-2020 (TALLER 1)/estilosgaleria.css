@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Baloo Thambi 2', cursive;
+    height: 1400px;
+    background-color: #BFB6B2;
+
+}
+
+/* AQUÍ EMPIEZA EL MAIN*/
+
+.main {
+    max-width: 1200px;
+    width: 1200px;
+    margin: auto;
+    height: 90%;
+}
+
+.header {
+    
+    width: 100%;
+    margin: 50px auto;
+    background-color: #807977;
+}
+
+.tituloPrincipal {
+    font-size: 40px;
+    text-align: center;
+}
+
+.aside {
+    background-color: #403D3B;
+    width: 25%;
+    float: right;
+    margin-top: 0px;
+    padding: 70px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgb(0, 0, 0);
+    position: sticky;
+    top: 60px;
+    right: 50px;
+    margin-bottom: 40px;
+}
+
+.linkMenu {
+    text-decoration: none;
+    color: white;
+}
+
+.linkMenu:hover{
+    
+    color: wheat;
+    font-weight: bold;
+    
+}
+
+.itemMenu {
+    list-style: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* ACÁ EMPEZAMOS EL FOOTER */
+
+.footer {
+    background-color: #403D3B;
+    padding: 20px 0 50px;
+    height: 150px;
+    /* margin-bottom: 5px; */
+}
+
+.conColsFooter {
+    width: 600px;
+    margin: auto;
+    margin-bottom: 30px;
+
+}
+
+.contactTitle {
+    text-align: center;
+    color: wheat;
+    font-size: 1.8rem;
+    font-weight: 300;
+
+}
+
+.colsFooter {
+    width: 50%;
+    float: left;
+    margin-top: 20px;
+}
+
+.colsFooter a {
+    display: block;
+    margin-top: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.colsFooter p {
+    font-weight: 300;
+}
+
+.colsFooter a,
+.colsFooter p {
+    color: white;
+    text-align: center;
+}
+
+.colsFooter a:hover {
+    color: wheat;
+}
+
+/* ESTILOS GALERÍA */
+
+.h5{
+font-size: 50px;
+margin-top: 10px;
+text-align: center;
+display:block;
+}
+
+.infoImg{
+    float: center;
+    width: 10px;
+}
+
+
+.table{
+    display: inline-table;
+    float: left;
+    border: 3px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    margin: 30px auto;
+    width: 70% ;
+}
+
+.table tr,
+.table td {
+    border: 2px solid rgb(0,0,0);
+    padding: 10px;
+    text-align: center;
+}
+
+
+.imagen1{
+    width: 420px;
+    height: 240px;
+    transition: all 3s ease in out;
+}
+
+.imagen1:hover{
+    box-shadow: 0 0 8px black;
+    transform: scale(1.04);
+    transition: all 3s ease in out;
+}
+
+.fenPrecision{
+    font-weight: 900;
+}
+
+.imagen2{
+    width: 420px;
+    height: 240px;
+    transition: all 3s ease in out;
+}
+
+.imagen2:hover{
+    box-shadow: 0 0 8px black;
+    transform: scale(1.04);
+    transition: all 3s ease in out;
+}
+
+.imagen3{
+    width: 420px;
+    height: 240px;
+    transition: all 3s ease in out;
+}
+
+.imagen3:hover{
+    box-shadow: 0 0 8px black;
+    transform: scale(1.04);
+    transition: all 3s ease in out;
+}
+
+.imagen4{
+    width: 420px;
+    height: 240px;
+    transition: all 3s ease in out;
+}
+
+.imagen4:hover{
+    box-shadow: 0 0 8px black;
+    transform: scale(1.04);
+    transition: all 3s ease in out;
+}
+
+.imagen5{
+    width: 420px;
+    height: 240px;
+    transition: all 3s ease in out;
+}
+
+.imagen5:hover{
+    box-shadow: 0 0 8px black;
+    transform: scale(1.04);
+    transition: all 3s ease in out;
+}
+
+.imagen6{
+    width: 420px;
+    height: 240px;
+    transition: all 3s ease in out;
+}
+
+.imagen6:hover{
+    box-shadow: 0 0 8px black;
+    transform: scale(1.04);
+    transition: all 3s ease in out;
+}
