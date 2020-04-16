@@ -1,0 +1,20 @@
+.cont1 {
+    text-align: center;
+}
+
+.cont3 {
+    text-align: center;
+}
+
+.menu {
+    height: 50px;
+    text-align: center;
+}
+
+.aside, .main {
+    height: 600px;
+}
+
+.footer {
+    height: 50px;
+}
